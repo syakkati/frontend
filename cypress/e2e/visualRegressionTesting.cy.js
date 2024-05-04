@@ -3,9 +3,9 @@
 
 describe("Successfully Login the User", () => {
     it("passes", () => {
-      cy.visit("http://44.196.77.186:3000/");
+      cy.visit("http://54.175.158.227:3000/");
       cy.get('[id="loginsignup-btn"]').click();
-      cy.url().should("eq", "http://44.196.77.186:3000/login");
+      cy.url().should("eq", "http://54.175.158.227:3000/login");
       cy.get("[id=email]").type("somanadhyakkati1@gmail.com");
       cy.get("[id=password]").type("1234");
       cy.get('[id="submit"]').click();

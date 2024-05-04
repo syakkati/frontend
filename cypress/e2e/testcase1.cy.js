@@ -1,8 +1,8 @@
 describe("Login Page", () => {
   it("Should Show Validation Error when existing user Signup", () => {
-    cy.visit("http://44.196.77.186:3000/login");
+    cy.visit("http://54.175.158.227:3000/login");
 
-    cy.intercept('POST', 'http://:33.218.18:3001/app/login', {
+    cy.intercept('POST', 'http://3.218.18.30:3001/app/login', {
       statusCode: 201,
       body: {
         message: 'Incorrect Password',
